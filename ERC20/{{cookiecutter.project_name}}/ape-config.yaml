@@ -1,0 +1,35 @@
+name: {{ cookiecutter.project_name }}
+plugins:
+  - name: vyper
+
+
+{%- if cookiecutter.ecosystem == "y" %}
+
+geth:
+  polygon:
+    mumbai:
+      uri: https://rpc-mumbai.maticvigil.com/
+
+{%- endif %}
+
+
+{%- if cookiecutter.ecosystem == "optimism" %}
+
+geth:
+  optimism:
+    goerli:
+      uri: https://goerli.optimism.io
+
+{%- endif %}
+
+
+{%- if cookiecutter.ecosystem == "default" %}
+
+default_ecosystem: ethereum
+
+ethereum:
+  default_network: local
+  local:
+    default_provider: test
+
+{%- endif %}
