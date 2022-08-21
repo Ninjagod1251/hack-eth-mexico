@@ -1,0 +1,13 @@
+{
+    "project_name": "ape-nft-project",
+    "token_name": "Ape NFT",
+    "token_symbol": "APES",
+    "updatable_uri": "y",
+    "base_uri": "ipfs://QmfBhQ7jk64f852pwYsj5RKZp68ntX1LqGod98MZQxbwrv",
+    "metadata": "y",
+    "mintable": "y",
+    "max_supply": "y",
+    "max_supply_amount": 10000,
+    "permitable": "y",
+    "ecosystem": ["default","polygon", "optimism"]
+}
